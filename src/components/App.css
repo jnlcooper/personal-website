@@ -1,0 +1,49 @@
+/*Font used for headings*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+/*Font used for paragraph&body*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/*Default text styling*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: #99B6AE;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Styling for line that is used underneath headers*/
+.title-line {
+    border-bottom: 3px solid #99B6AE;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/*Default styling for section backgrounds*/
+.jumbo {
+    color: #F2F2F2;
+    background-color: #0E0E0E;
+    z-index: -2;
+    height: 100%;
+    display: block;
+    margin-bottom: 0px;
+    height:100vh;
+}
