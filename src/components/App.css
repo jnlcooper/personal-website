@@ -3,31 +3,74 @@
 /*Font used for paragraph&body*/
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-/*Default text styling*/
-h1{
+/*White heading text*/
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin: 0;
+    color: #F2F2F2;
+    text-decoration: none;
 }
 
-h2{
+/*Green heading text*/
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     font-weight: 300;
     color: #99B6AE;
     margin: 0;
+    text-decoration: none;
 }
 
-h3{
+/*Green subtitle text*/
+h3 {
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #99B6AE;
+    text-decoration: none;
 }
 
-p{
-    font-family: 'Raleway', sans-serif;
+/*Green button text*/
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #99B6AE;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*Regular paragraph text*/
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*Emphasised 1st paragraph font*/
+.p1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #F2F2F2;
+}
+
+.new-paragraph {
+    margin-top: 2em;
+}
+
+.background-color {
+    background-color: #0E0E0E;
 }
 
 /*Styling for line that is used underneath headers*/
@@ -37,13 +80,111 @@ body{
     margin-bottom: 10px;
 }
 
-/*Default styling for section backgrounds*/
-.jumbo {
-    color: #F2F2F2;
-    background-color: #0E0E0E;
-    z-index: -2;
-    height: 100%;
-    display: block;
-    margin-bottom: 0px;
-    height:100vh;
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #262626; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #595A5A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F2F2F2; 
+}
+
+@media all and (max-width: 1020px) { /*screen sizes up to 1120px*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    .p1 {
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .new-paragraph {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width: 1020px) and (orientation: portrait) { /*screen sizes up to 1120px*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    .p1 {
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .new-paragraph {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-height: 700px) { /*screen sizes up to 700px*/
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    .p1 {
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .new-paragraph {
+        margin-top: 5px;
+    }
 }

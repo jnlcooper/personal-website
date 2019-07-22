@@ -1,30 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './Home';
-import { About } from './About';
-import { Contact } from './Contact';
+import { Home } from './homePage/Home';
 import { NoMatch } from './NoMatch';
-import { Layout } from './Layout';
-import { NavigationBar } from './NavigationBar';
-
 import './App.css'
+//Add icons to library so they can be called at any point in the application (see ContactPage for an example)
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <NavigationBar />
-                {/*<Jumbotron />*/}
-                {/*<Layout>*/}
-                    <Router>
+                    <Router history={this.props.history}>
                         <Switch>
                             <Route exact path="/" component={Home} />
-                            <Route path="/about" component={About} />
-                            <Route path="/contact" component={Contact} />
                             <Route component={NoMatch}/>
                         </Switch>
                     </Router>
-                {/*</Layout>*/}
             </React.Fragment>
         );
     }
