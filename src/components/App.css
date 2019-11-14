@@ -1,68 +1,75 @@
-/*Font used for headings*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
-/*Font used for paragraph&body*/
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/*
+    Colour scheme:
+        #666A72 --> Light grey
+        #D8AFA0 --> Dark pink
+        #F2D4CD --> Light pink
+        #262626 --> Dark Grey
+        #0C0C0C --> Blackish colour
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 /*White heading text*/
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 2em;
     margin: 0;
-    color: #F2F2F2;
+    color: #666A72;
     text-decoration: none;
 }
 
 /*Green heading text*/
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     font-weight: 300;
-    color: #99B6AE;
+    color: #F2D4CD;
     margin: 0;
     text-decoration: none;
 }
 
 /*Green subtitle text*/
 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    color: #99B6AE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #F2D4CD;
     text-decoration: none;
 }
 
 /*Green button text*/
 h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
     font-weight: 400;
-    color: #99B6AE;
+    color: #F2D4CD;
     letter-spacing: 2px;
     text-decoration: none;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #F2F2F2;
+    font-family: 'Muli', sans-serif;
+    color: #0C0C0C;
     font-size: 1em;
     text-decoration: none;
 }
 
 /*Regular paragraph text*/
 p {
-    font-family: 'Raleway', sans-serif;
-    color: #F2F2F2;
+    font-family: 'Muli', sans-serif;
+    color: #0C0C0C;
     font-size: 1em;
     text-decoration: none;
 }
 
 /*Emphasised 1st paragraph font*/
 .p1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 1em;
     line-height: 30px;
     letter-spacing: 2px;
-    color: #F2F2F2;
+    color: #0C0C0C;
 }
 
 .new-paragraph {
@@ -70,12 +77,12 @@ p {
 }
 
 .background-color {
-    background-color: #0E0E0E;
+    background-color: #FFFFFF;
 }
 
 /*Styling for line that is used underneath headers*/
 .title-line {
-    border-bottom: 3px solid #99B6AE;
+    border-bottom: 3px solid #F2D4CD;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
@@ -85,15 +92,15 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #262626; 
+    background: #0C0C0C;; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #595A5A;
+    background: #666A72;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #F2F2F2; 
+    background: #FFFFFF; 
 }
 
 @media all and (max-width: 1020px) { /*screen sizes up to 1120px*/

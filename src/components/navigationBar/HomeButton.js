@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import navbar_logo from '../../assets/navBar/urbanFutures_white_icon.svg';
+import navbar_logo from '../../assets/navBar/logo.svg';
 
 export const HomeButton = () => (
     <Navbar expand="lg" fixed="top">
@@ -11,7 +11,7 @@ export const HomeButton = () => (
                 width="30"
                 height="auto"
                 className="d-inline-block align-top"
-                alt="Urban Futures Navbar Logo"
+                alt="JC Portfolio Navbar Logo"
             />
         </Navbar.Brand>
     </Navbar>

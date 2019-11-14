@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import hamburger_white_icon from '../../assets/navBar/hamburger_white_icon.svg';
 import hamburger_grey_icon from '../../assets/navBar/hamburger_grey_icon.svg';
-import navbar_logo from '../../assets/navBar/urbanFutures_white_icon.svg';
+import navbar_logo from '../../assets/navBar/logo.svg';
 
 const Styles = styled.div`
     .nav-button {
@@ -57,7 +57,7 @@ export const NavigationBar = () => (
                     width="30"
                     height="auto"
                     className="d-inline-block align-top"
-                    alt="Urban Futures Navbar Logo"
+                    alt="JC Portfolio Navbar Logo"
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>

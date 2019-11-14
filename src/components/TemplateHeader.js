@@ -58,7 +58,7 @@ class TemplateHeader extends React.Component {
                                 <Col className="d-flex justify-content-center mb-3 p-0">
                                     <img
                                         src={urbanFutures_white_logo}
-                                        alt="Urban Futures Logo"
+                                        alt="JC Portfolio Logo"
                                         className="logo"
                                     />
                                 </Col>
