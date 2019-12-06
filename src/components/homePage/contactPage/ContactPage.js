@@ -44,6 +44,10 @@ const Styles = styled.div`
         padding-right: 0;
     }
 
+    .col-padding-bottom {
+        padding-bottom: 4rem;
+    }
+
     input[type=submit] {
         border: 1px solid #F2D4CD;
         font-family: 'Montserrat', sans-serif;
@@ -99,7 +103,7 @@ class ContactPage extends React.Component {
         return(
             <Styles>
                 <Row className="m-0 background-color vh-100 p-0 d-flex">
-                    <Col xs={{span:5, offset:1}} className="vh-100">
+                    <Col xs={{span:10, offset:1}} sm={{span:5, offset:1}} className="vh-100">
                         <Row className="vh-50 m-0 col-padding">
                             <Col>
                                 <Row>
@@ -141,7 +145,7 @@ class ContactPage extends React.Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs={{span:6}} className="grey-background col-padding d-flex align-items-center w-100">
+                    <Col xs={{span:12}} md={{span:6}} className="grey-background col-padding d-flex align-items-center w-100">
                         <Row className="m-0 w-100">
                             <form action="https://formcarry.com/s/Ue7QJ-H1wIM" method="POST" acceptCharset="UTF-8" className="w-100" >
                                 <Col xs={{span:6, offset:1}}>
@@ -171,10 +175,9 @@ class ContactPage extends React.Component {
                                     <Row className="mb-4">
                                         <textarea type="text" name="message" id="message" className="w-100" />
                                     </Row>
-                                    <Row className="d-flex justify-content-end">
+                                    <Row className="d-flex justify-content-end col-padding-bottom">
                                         <input type="hidden" name="_gotcha" />
                                         <input type="submit" value='SUBMIT' className="" />
-                                        {/*<PrimaryButton buttonText="testing" />*/}
                                     </Row>
                                 </Col>
                             </form>
