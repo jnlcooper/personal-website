@@ -1,169 +1,186 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Jumbotron as Jumbo, Container, Col, Row } from 'react-bootstrap';
-import Map from './ContactPage_Map';
+import { Jumbotron as Jumbo, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import phone_icon from '../../../assets/homePage/contactPage/phone_icon.png';
-import email_icon from '../../../assets/homePage/contactPage/email_icon.png';
-import website_icon from '../../../assets/homePage/contactPage/website_icon.png';
-import address_icon from '../../../assets/homePage/contactPage/address_icon.png';
+import ContactIllustration from '../../../assets/homePage/contactPage/contact_illustration.png';
 
 const Styles = styled.div`
-    .contact-text-margin {
-        margin-top: 13px;
-        margin-left: 1em;
-    }
-
-    .title-margin {
-        margin-top: 4rem;
-    }
-
-    .map-container {
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
     .icon {
-        color: #99B6AE;
+        color: #666A72;
+        margin-right: 0.5em;
 
         &:hover {
-            color: #F2F2F2;
+            color: #F2D4CD;
             cursor: pointer;
         }
     }
 
-    @media all and (max-width: 1020px) {
-        .contact-text-margin {
-            margin-top: 7px;
-        }
+    .hyperlink-text {
+        color: #666A72;
+        font-weight: 600;
+        font-size: 0.9em;
 
-        .contact-icons {
-            width: 30px;
-            height: 30px;
+        &:hover {
+            color: #F2D4CD;
         }
     }
 
-    @media all and (max-width: 992px) {
-        .map-container {
-            height: 50vh;
+    p.label-text {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 0.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .grey-background {
+        background-color: #666A72;
+    }
+
+    .col-padding {
+        padding-top: 4rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    input[type=submit] {
+        border: 1px solid #F2D4CD;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: #F2D4CD
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background-color: rgba(0,0,0,0);
+        padding: .375rem .75rem;
+
+        &:hover {
+            background-color: #F2D4CD;
+            color: #D8AFA0;
         }
 
-        .title-margin {
-            margin-top: 0;
+        &:active {
+            outline: none;
         }
 
-        .contact-info-column {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+        &:focus {
+            box-shadow: 0px 0px 5px #F2D4CD;
+            outline: none;
         }
     }
 
-    @media all and (max-width: 576px) {
-        .map-container {
-            margin-bottom: 3rem;
-            height: 25vh;
+    input[type=text], input[type=email], textarea[type=text] {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #F2D4CD;
+        background-color: rgba(0,0,0,0);
+        padding: 0.5em;
+        color: #FFFFFF;
+        font-family: 'Muli', sans-serif;
+
+        &:focus {
+            outline-color: #D8AFA0;
         }
+    }
+
+    .vh-50 {
+        height: 50vh;
     }
 `
 
 class ContactPage extends React.Component {
-    handleIconClick = (icon) => {
-        if(icon === "facebook") {
-            window.open('https://www.facebook.com/thecimslab', "Urban Futures Facebook");
-        }else if(icon === "instagram") {
-            window.open('https://www.instagram.com/thecimslab/', "Urban Futures Instagram");
-        }else if(icon === "twitter") {
-            window.open('https://twitter.com/thecimslab', "Urban Futures Twitter");
-        }
-        
+    handleLineClick = () => {
+        window.open('www.linkedin.com/in/joannacooper1', "Joanna Cooper LinkedIn Profile");
     }
 
     render() {
         return(
             <Styles>
-                <Jumbo fluid className="background-color d-flex m-0 p-0">
-                    <Container fluid className="p-0">
-                        <Col xs={{span:11, offset:1}}>
-                            <Row className="d-flex align-items-center">
-                                <Col xs={{span:11}} sm={{span:5}} className="contact-info-column">
+                <Row className="m-0 background-color vh-100 p-0 d-flex">
+                    <Col xs={{span:5, offset:1}} className="vh-100">
+                        <Row className="vh-50 m-0 col-padding">
+                            <Col>
+                                <Row>
+                                    <h1>GET IN</h1>
+                                </Row>
+                                <Row className="mb-4">
+                                    <h2 className="title-line">CONTACT</h2>
+                                </Row>
+                                <Row>
+                                    <p>
+                                        If you would like to contact me, please fill out the following form or visit LinkedIn.
+                                    </p>
+                                </Row>
+                                <Row className="d-flex align-items-center">
+                                    <FontAwesomeIcon 
+                                        icon={['fab', 'linkedin']}
+                                        size="1x" 
+                                        className="icon" 
+                                        onClick={() => this.handleBlogClick()}
+                                    />
+                                    <p className="m-0 hyperlink-text" onClick={() => this.handleLinkClick()}>
+                                        www.linkedin.com/in/joannacooper1
+                                    </p>
+                                </Row>
+                            </Col>
+                        </Row>
+                        <Row className="vh-50 m-0 d-flex align-items-end">
+                            <Col>
+                                <Row>
+                                    <Col xs={{span:10, ofset:1}}>
+                                        <img 
+                                            src={ContactIllustration} 
+                                            width="100%" 
+                                            height="auto" 
+                                            alt="Contact Information Illustration" 
+                                        />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col xs={{span:6}} className="grey-background col-padding d-flex align-items-center w-100">
+                        <Row className="m-0 w-100">
+                            <form action="https://formcarry.com/s/Ue7QJ-H1wIM" method="POST" acceptCharset="UTF-8" className="w-100" >
+                                <Col xs={{span:6, offset:1}}>
                                     <Row>
-                                        <Col>
-                                            <Row className="title-margin">
-                                                <h1>CONTACT</h1>
-                                            </Row>
-                                            <Row>
-                                                <h2 className="title-line">INFORMATION</h2>
-                                            </Row>
-                                        </Col>
+                                        <label htmlFor="firstName" className="m-0"><p className="label-text">First name:</p></label>
                                     </Row>
-                                    <Row className="mt-5 mb-5">
-                                        <Col>
-                                            <Row className="mb-2">
-                                                <img
-                                                    src={phone_icon}
-                                                    width="48px"
-                                                    height="48px"
-                                                    alt="Phone Icon"
-                                                    className="contact-icons"
-                                                />
-                                                <p className="contact-text-margin">(613)-520-2600</p>
-                                            </Row>
-                                            <Row className="mb-2">
-                                                <img    
-                                                    src={email_icon}
-                                                    width="48px"
-                                                    height="48px"
-                                                    alt="Email Icon"
-                                                    className="contact-icons"
-                                                />
-                                                <p className="contact-text-margin">info@cims.carleton.ca</p>
-                                            </Row>
-                                            <Row className="mb-2">
-                                                <img
-                                                    src={website_icon}
-                                                    width="48px"
-                                                    height="48px"
-                                                    alt="Website Icon"
-                                                    className="contact-icons"
-                                                />
-                                                <p className="contact-text-margin">http://cims.carleton.ca</p>
-                                            </Row>
-                                            <Row className="mb-2">
-                                                <img
-                                                    src={address_icon}
-                                                    width="48px"
-                                                    height="48px"
-                                                    alt="Address Icon"
-                                                    className="contact-icons"
-                                                />
-                                                <p className="contact-text-margin">
-                                                    Carleton Immersive Media Studio<br />
-                                                    Carleton University<br />
-                                                    Virtual & Simulation Building, 4<sup>th</sup> Floor,<br />
-                                                    1125 Colonel By Drive<br />
-                                                    Ottawa, ON, K1S 5B6         
-                                                </p>
-                                            </Row>
-                                        </Col>
+                                    <Row className="mb-4">
+                                        <input type="text" name="firstName" id="firstName" className="w-100" />
                                     </Row>
                                     <Row>
-                                        <FontAwesomeIcon icon={['fab', 'facebook']} mask={['circle']} size="2x" className="icon 2x" onClick={() => this.handleIconClick("facebook")} />
-                                        <FontAwesomeIcon icon={['fab', 'instagram']} mask={['circle']} size="2x" className="ml-5 icon 2x" onClick={() => this.handleIconClick("instagram")} />
-                                        <FontAwesomeIcon icon={['fab', 'twitter']} mask={['circle']} size="2x" className="ml-5 icon 2x" onClick={() => this.handleIconClick("twitter")} />
+                                        <label htmlFor="lastName" className="m-0"><p className="label-text">Last name:</p></label>
+                                    </Row>
+                                    <Row className="mb-4">
+                                        <input type="text" name="lastName" id="lastName" className="w-100" />
+                                    </Row>
+                                    <Row>
+                                        <label htmlFor="email" className="m-0"><p className="label-text">Email address:</p></label>
+                                    </Row>
+                                    <Row className="mb-4">
+                                        <input type="email" name="email" id="email" className="w-100" />
                                     </Row>
                                 </Col>
-                                <Col xs={{span:11}} sm={{span:7}} className="p-0 m-0">
-                                    <Row className="map-container">
-                                        <Map />
+                                <Col xs={{span:10, offset:1}}>
+                                    <Row>
+                                        <label htmlFor="message" className="m-0"><p className="label-text">Message:</p></label>
+                                    </Row>
+                                    <Row className="mb-4">
+                                        <textarea type="text" name="message" id="message" className="w-100" />
+                                    </Row>
+                                    <Row className="d-flex justify-content-end">
+                                        <input type="hidden" name="_gotcha" />
+                                        <input type="submit" value='SUBMIT' className="" />
+                                        {/*<PrimaryButton buttonText="testing" />*/}
                                     </Row>
                                 </Col>
-                            </Row>
-                        </Col>                       
-                    </Container>
-                </Jumbo>
+                            </form>
+                        </Row>
+                    </Col>
+                </Row>
             </Styles>
         );
     }

@@ -22,10 +22,10 @@ export const Home = () => {
             </div>
             {/*<div className="personal-projects">
                 <PersonalProjects />
-            </div>
+            </div>*/}
             <div className="contact-page">
                 <ContactPage />
-            </div>*/}
+            </div>
         </React.Fragment>
     );
 }
