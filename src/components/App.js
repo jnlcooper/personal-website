@@ -2,11 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './homePage/Home';
 import { NoMatch } from './NoMatch';
+import Footer from './Footer';
 import './App.css'
 //Add icons to library so they can be called at any point in the application (see ContactPage for an example)
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+
 
 library.add(fab, fas);
 
@@ -20,6 +22,7 @@ class App extends React.Component {
                             <Route component={NoMatch}/>
                         </Switch>
                     </Router>
+                    <Footer />
             </React.Fragment>
         );
     }

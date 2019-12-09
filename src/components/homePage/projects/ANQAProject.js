@@ -27,7 +27,7 @@ const Styles = styled.div`
 `
 
 class ANQAProject extends React.Component {
-    handleBlogClick = () => {
+    handleLinkClick = () => {
         window.open('https://cims.carleton.ca/anqa/', "ANQA Website");
     }
 
@@ -48,7 +48,7 @@ class ANQAProject extends React.Component {
                         mask={['circle']} 
                         size="1x" 
                         className="icon" 
-                        onClick={() => this.handleBlogClick()}
+                        onClick={() => this.handleLinkClick()}
                     />
                     <p className="m-0 hyperlink-text" onClick={() => this.handleLinkClick()}>
                         https://cims.carleton.ca/anqa/

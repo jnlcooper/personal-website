@@ -2,17 +2,17 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
-import hamburger_white_icon from '../../assets/navBar/hamburger_white_icon.svg';
-import hamburger_grey_icon from '../../assets/navBar/hamburger_grey_icon.svg';
+import hamburger_icon from '../../assets/navBar/hamburger_icon.svg';
+import hamburger_hover_icon from '../../assets/navBar/hamburger_hover_icon.svg';
 import navbar_logo from '../../assets/navBar/logo.svg';
 
 const Styles = styled.div`
     .nav-button {
         margin-right: 1em;
-        color: #F2F2F2;
+        color: #F2D4CD;
 
         &:hover {
-            color: #99B6AE;
+            color: #D8AFA0;
             cursor: pointer;
         }
     }
@@ -33,10 +33,14 @@ const Styles = styled.div`
     }
 
     .navbar-toggler-icon {
-        background-image: url(${hamburger_white_icon});
+        background-image: url(${hamburger_icon});
 
         &:active {
-            background-image: url(${hamburger_grey_icon});
+            background-image: url(${hamburger_hover_icon});
+        }
+
+        &:hover {
+            background-image: url(${hamburger_hover_icon});
         }
     }
 
@@ -66,40 +70,29 @@ export const NavigationBar = () => (
                     <Nav.Item className="d-flex justify-content-end">
                         <Link
                             activeClass="active"
-                            to="project-overview"
+                            to="about"
                             spy={true}
                             smooth={true}
                             duration={500}
                         >
-                            <h4 className="nav-button">PROJECT</h4>
+                            <h4 className="nav-button">ABOUT</h4>
                         </Link>
                     </Nav.Item>
                     <Nav.Item className="d-flex justify-content-end">
                         <Link
                             activeClass="active"
-                            to="design-charrettes"
+                            to="professional-projects"
                             spy={true}
                             smooth={true}
                             duration={500}
                         >
-                            <h4 className="nav-button">CHARRETTES</h4>
+                            <h4 className="nav-button">PORTFOLIO</h4>
                         </Link>
                     </Nav.Item>
                     <Nav.Item className="d-flex justify-content-end">
                         <Link
                             activeClass="active"
-                            to="researchers"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <h4 className="nav-button">RESEARCHERS</h4>
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item className="d-flex justify-content-end">
-                        <Link
-                            activeClass="active"
-                            to="contact-page"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             duration={500}

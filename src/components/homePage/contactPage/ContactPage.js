@@ -109,8 +109,8 @@ const Styles = styled.div`
 `
 
 class ContactPage extends React.Component {
-    handleLineClick = () => {
-        window.open('www.linkedin.com/in/joannacooper1', "Joanna Cooper LinkedIn Profile");
+    handleLinkClick = () => {
+        window.open('https://www.linkedin.com/in/joannacooper1/', "Joanna Cooper LinkedIn Profile");
     }
 
     render() {
@@ -128,7 +128,7 @@ class ContactPage extends React.Component {
                                 </Row>
                                 <Row>
                                     <p>
-                                        If you would like to contact me, please fill out the following form or visit LinkedIn.
+                                        If you would like to contact me, please fill out the following form or reach out to me through LinkedIn.
                                     </p>
                                 </Row>
                                 <Row className="d-flex align-items-center">
@@ -136,7 +136,7 @@ class ContactPage extends React.Component {
                                         icon={['fab', 'linkedin']}
                                         size="1x" 
                                         className="icon" 
-                                        onClick={() => this.handleBlogClick()}
+                                        onClick={() => this.handleLinkClick()}
                                     />
                                     <p className="m-0 hyperlink-text" onClick={() => this.handleLinkClick()}>
                                         www.linkedin.com/in/joannacooper1

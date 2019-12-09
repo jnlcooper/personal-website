@@ -15,12 +15,6 @@ const Styles = styled.div`
 `
 
 class PersonalProjects extends React.Component {
-    handleClick = (icon) => {
-        if(icon === "oeed_blog") {
-            window.open('https://cims.carleton.ca/#/blogs/OE3D_macro_micro', "CIMS OEED Blog");
-        }
-    }
-
     render() {
         return(
             <Styles>

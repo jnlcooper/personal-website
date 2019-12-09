@@ -5,6 +5,7 @@ import ProfessionalProjects from './projects/ProfessionalProjects';
 import ContactPage from './contactPage/ContactPage';
 import { NavigationBar } from '../navigationBar/NavigationBar';
 import PersonalProjects from './projects/PersonalProjects';
+import Footer from '../Footer';
 
 export const Home = () => {
     return (
@@ -23,7 +24,7 @@ export const Home = () => {
             {/*<div className="personal-projects">
                 <PersonalProjects />
             </div>*/}
-            <div className="contact-page">
+            <div className="contact">
                 <ContactPage />
             </div>
         </React.Fragment>

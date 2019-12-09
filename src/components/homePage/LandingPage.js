@@ -26,6 +26,9 @@ export const LandingPage = () => (
                 <Row>
                     <h2 className="landing-subheading">PORTFOLIO</h2>
                 </Row>
+                <Row className="mt-5">
+                    <h4>WEB DEVELOPER - UI/UX DESIGNER - MULTIMEDIA DESIGNER</h4>
+                </Row>
             </Col>       
         </Jumbo>
     </Styles>
