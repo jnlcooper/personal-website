@@ -92,6 +92,20 @@ const Styles = styled.div`
     .vh-50 {
         height: 50vh;
     }
+
+    .description-container {
+        height: 100vh;
+    }
+
+    @media all and (max-height: 768px) {
+        .vh-50 {
+            height: 40vh;
+        }
+
+        .description-container {
+            height: 80vh;
+        }
+    }
 `
 
 class ContactPage extends React.Component {
@@ -103,7 +117,7 @@ class ContactPage extends React.Component {
         return(
             <Styles>
                 <Row className="m-0 background-color vh-100 p-0 d-flex">
-                    <Col xs={{span:10, offset:1}} sm={{span:5, offset:1}} className="vh-100">
+                    <Col xs={{span:10, offset:1}} md={{span:5, offset:1}} className="description-container">
                         <Row className="vh-50 m-0 col-padding">
                             <Col>
                                 <Row>
@@ -130,18 +144,14 @@ class ContactPage extends React.Component {
                                 </Row>
                             </Col>
                         </Row>
-                        <Row className="vh-50 m-0 d-flex align-items-end">
-                            <Col>
-                                <Row>
-                                    <Col xs={{span:10, ofset:1}}>
-                                        <img 
-                                            src={ContactIllustration} 
-                                            width="100%" 
-                                            height="auto" 
-                                            alt="Contact Information Illustration" 
-                                        />
-                                    </Col>
-                                </Row>
+                        <Row className="vh-50 m-0 d-flex align-items-end justify-content-center">
+                            <Col xs={{span:10, ofset:1}}>
+                                <img 
+                                    src={ContactIllustration} 
+                                    width="100%" 
+                                    height="auto" 
+                                    alt="Contact Information Illustration" 
+                                />
                             </Col>
                         </Row>
                     </Col>
