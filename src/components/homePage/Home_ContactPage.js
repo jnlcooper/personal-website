@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Jumbotron as Jumbo, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import ContactIllustration from '../../../assets/homePage/contactPage/contact_illustration.png';
+import ContactIllustration from '../../assets/homePage/contactPage/contact_illustration.png';
 
 const Styles = styled.div`
     .icon {
@@ -108,7 +108,7 @@ const Styles = styled.div`
     }
 `
 
-class ContactPage extends React.Component {
+class Home_ContactPage extends React.Component {
     handleLinkClick = () => {
         window.open('https://www.linkedin.com/in/joannacooper1/', "Joanna Cooper LinkedIn Profile");
     }
@@ -116,7 +116,7 @@ class ContactPage extends React.Component {
     render() {
         return(
             <Styles>
-                <Row className="m-0 background-color vh-100 p-0 d-flex">
+                <Row className="m-0 background-color p-0 d-flex">
                     <Col xs={{span:10, offset:1}} md={{span:5, offset:1}} className="description-container">
                         <Row className="vh-50 m-0 col-padding">
                             <Col>
@@ -199,4 +199,4 @@ class ContactPage extends React.Component {
     }
 }
 
-export default ContactPage;
+export default Home_ContactPage;

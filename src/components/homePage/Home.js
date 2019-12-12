@@ -1,11 +1,10 @@
 import React from 'react';
 import { LandingPage } from './LandingPage';
-import { Home_About as About } from './about/Home_About';
+import { Home_About as About } from './Home_About';
 import ProfessionalProjects from './projects/ProfessionalProjects';
-import ContactPage from './contactPage/ContactPage';
+import ContactPage from './Home_ContactPage';
 import { NavigationBar } from '../navigationBar/NavigationBar';
 import PersonalProjects from './projects/PersonalProjects';
-import Footer from '../Footer';
 
 export const Home = () => {
     return (
