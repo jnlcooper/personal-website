@@ -27,8 +27,13 @@ const Styles = styled.div`
 `
 
 class OEEDProject2 extends React.Component {
-    handleBlogClick = () => {
-        window.open('https://cims.carleton.ca/#/blogs/OE3D_macro_micro', "OEED Blog");
+    handleBlogClick = (blog) => {
+        if(blog === "appDev") {
+            window.open('https://cims.carleton.ca/#/blogs/OE3D_application_development', "OEED Blog");
+        } else if(blog === "macroMicro") {
+            window.open('https://cims.carleton.ca/#/blogs/OE3D_macro_micro', "OEED Blog");
+        }
+        
     }
 
     render() {
@@ -41,7 +46,7 @@ class OEEDProject2 extends React.Component {
                     <p>
                         OE3D is the biggest project in terms of scale undertaken by CIMS. The objective was to create an application to showcase Eastern Ontario, an area extending over 50,000 square kilometers.<br/>
                         As the primary UI/UX Designer, I was responsible for producing a user friendly, appealing UI that would be used throughout the application. Moreover, I also belong to the development team where we have been producing the application using React and Redux.
-                        You can learn more about this project by visiting the CIMS Lab’s blog post here:<br />
+                        You can learn more about this project by visiting the CIMS Lab’s blog posts here:<br />
                     </p>
                 </Row>
                 <Row className="d-flex align-items-center">
@@ -52,7 +57,19 @@ class OEEDProject2 extends React.Component {
                         className="icon" 
                         onClick={() => this.handleBlogClick()}
                     />
-                    <p className="m-0 hyperlink-text" onClick={() => this.handleBlogClick()}>
+                    <p className="m-0 hyperlink-text" onClick={() => this.handleBlogClick("appDev")}>
+                        https://cims.carleton.ca/#/blogs/OE3D_application_development
+                    </p>
+                </Row>
+                <Row className="d-flex align-items-center">
+                    <FontAwesomeIcon 
+                        icon={['fas', 'globe']} 
+                        mask={['circle']} 
+                        size="1x" 
+                        className="icon" 
+                        onClick={() => this.handleBlogClick()}
+                    />
+                    <p className="m-0 hyperlink-text" onClick={() => this.handleBlogClick("macroMicro")}>
                         https://cims.carleton.ca/#/blogs/OE3D_macro_micro
                     </p>
                 </Row>
