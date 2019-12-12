@@ -20,9 +20,9 @@ export const Home = () => {
             <div className="professional-projects">
                 <ProfessionalProjects />
             </div>
-            {/*<div className="personal-projects">
+            <div className="personal-projects">
                 <PersonalProjects />
-            </div>*/}
+            </div>
             <div className="contact">
                 <ContactPage />
             </div>

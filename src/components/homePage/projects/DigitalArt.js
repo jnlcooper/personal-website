@@ -46,31 +46,6 @@ class DigitalArt extends React.Component {
     
     render() {
         return(
-            /*<Styles>
-                <Col>
-                    <Row>
-                        <h3>DIGITAL ART & ILLUSTRATION</h3>
-                    </Row>
-                    <Row>
-                        <p>
-                            During my spare time, I often try to challenge myself with independent projects. Using the Adobe suite and a drawing tablet, I develop images in a water colour style.
-                        </p>
-                    </Row>
-                    {/*<div className="d-flex justify-content-center m-0">
-                        <Col xs={{span:12}} >
-                            <Carousel>
-                                {this.renderCarousel()}
-                            </Carousel>
-                        </Col>
-                    </div>
-                    <Row>
-                        <Col xs={{span:12}} style={{backgroundColor: "red"}}>
-                            <p>Testing</p>
-                        </Col>
-                    </Row>
-                </Col>
-                </Styles>*/
-
             <Styles>
                 <Row className="m-0">
                     <Col xs={{span:10, offset:1}} className="mt-5">
@@ -81,11 +56,11 @@ class DigitalArt extends React.Component {
                     <Col xs={{span:10, offset:1}}>
                         <Row>
                             <p>
-                                During my spare time, I often try to challenge myself with independent projects. Using the Adobe suite and a drawing tablet, I develop images in a water colour style.<br/>
+                                During my spare time, I often try to challenge myself with independent projects. Using the Adobe suite and a drawing tablet, I develop images in a water colour/ink style.<br/>
                             </p>
                         </Row>
                         <Row className="d-flex align-items-center">
-                            <Col xs={{span:12}} style={{backgroundColor: "red"}}>
+                            <Col xs={{span:12}}>
                                 <Carousel>
                                     {this.renderCarousel()}
                                 </Carousel>

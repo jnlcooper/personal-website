@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import juniorBanner from '../../../assets/projects/personalProjects/juniorsjourneybanner.png';
+import juniorBanner from '../../../assets/projects/personalProjects/seniorProject/juniorsjourneybanner.png';
 
 const Styles = styled.div`
     p {
@@ -19,8 +19,6 @@ class UrbanFuturesProject extends React.Component {
                         <Row>
                             <h3>JUNIOR'S JOURNEY - INTERACTIVE CHILDREN'S ANIMATION</h3>
                         </Row>
-                    </Col>
-                    <Col xs={{span:10, offset:1}}>
                         <Row>
                             <p>
                                 Junior’s Journey is an interactive children’s animation that I was a part of during my final year at Carleton University. Throughout the project, my main roles consisted of character design, 3D modelling and animation.

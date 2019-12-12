@@ -29,12 +29,9 @@ class PersonalProjects extends React.Component {
                             </Row>
                         </Col>
                     </Row>
-                    <Row className="m-0">
-                        <SeniorProject />
-                    </Row>
-                    <Row className="m-0">
-                        <DigitalArt />
-                    </Row>
+                    <SeniorProject />
+                    <DigitalArt />
+                    {/*<LedgeProject />*/}
                 </Jumbo>
             </Styles>
         );

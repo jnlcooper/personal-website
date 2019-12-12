@@ -28,13 +28,14 @@ const Styles = styled.div`
 
     p.label-text {
         text-transform: uppercase;
-        color: #FFFFFF;
         margin-bottom: 0.5em;
+        color: #D8AFA0;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
     }
 
     .grey-background {
-        background-color: #666A72;
+        background-color: #F2F2F2;
     }
 
     .col-padding {
@@ -49,10 +50,10 @@ const Styles = styled.div`
     }
 
     input[type=submit] {
-        border: 1px solid #F2D4CD;
+        border: 1px solid #D8AFA0;
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
-        color: #F2D4CD
+        color: #D8AFA0;
         font-weight: 400;
         letter-spacing: 2px;
         text-decoration: none;
@@ -78,10 +79,10 @@ const Styles = styled.div`
         border-top: 0;
         border-left: 0;
         border-right: 0;
-        border-bottom: 1px solid #F2D4CD;
+        border-bottom: 1px solid #666A72;
         background-color: rgba(0,0,0,0);
         padding: 0.5em;
-        color: #FFFFFF;
+        color: #666A72;
         font-family: 'Muli', sans-serif;
 
         &:focus {
@@ -104,6 +105,16 @@ const Styles = styled.div`
 
         .description-container {
             height: 80vh;
+        }
+    }
+
+    .visibility {
+        visibility: visible;
+    }
+
+    @media all and (max-height: 612px) {
+        .visibility {
+            visibility: hidden;
         }
     }
 `
@@ -144,13 +155,13 @@ class Home_ContactPage extends React.Component {
                                 </Row>
                             </Col>
                         </Row>
-                        <Row className="vh-50 m-0 d-flex align-items-end justify-content-center">
+                        <Row className="vh-50 m-0 d-flex align-items-end justify-content-center visibility">
                             <Col xs={{span:10, ofset:1}}>
                                 <img 
                                     src={ContactIllustration} 
                                     width="100%" 
                                     height="auto" 
-                                    alt="Contact Information Illustration" 
+                                    alt="Contact Information Illustration"
                                 />
                             </Col>
                         </Row>
