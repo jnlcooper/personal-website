@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3733c35f.chunk.css",
+    "main.js": "/static/js/main.0ef350f4.chunk.js",
+    "main.js.map": "/static/js/main.0ef350f4.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.1ae3e124.chunk.js": "/static/js/2.1ae3e124.chunk.js",
+    "static/js/2.1ae3e124.chunk.js.map": "/static/js/2.1ae3e124.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.75c6b3be83d4a6ff127fe92c9d03b62c.js": "/precache-manifest.75c6b3be83d4a6ff127fe92c9d03b62c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3733c35f.chunk.css.map": "/static/css/main.3733c35f.chunk.css.map",
+    "static/media/christmascard2015_small.jpg": "/static/media/christmascard2015_small.8f060295.jpg",
+    "static/media/contact_illustration.png": "/static/media/contact_illustration.476f3fd6.png",
+    "static/media/hamburger_hover_icon.svg": "/static/media/hamburger_hover_icon.b2cfe9b6.svg",
+    "static/media/hamburger_icon.svg": "/static/media/hamburger_icon.a399be22.svg",
+    "static/media/juniorsjourneybanner.png": "/static/media/juniorsjourneybanner.9b53a217.png",
+    "static/media/logo.svg": "/static/media/logo.9351353e.svg",
+    "static/media/logo_grey.svg": "/static/media/logo_grey.57342cb4.svg",
+    "static/media/parliamentDrawing.png": "/static/media/parliamentDrawing.71b80df5.png",
+    "static/media/portrait.jpg": "/static/media/portrait.9efd0caa.jpg",
+    "static/media/profile_pic_opacity.png": "/static/media/profile_pic_opacity.0f347260.png"
+  }
+}
