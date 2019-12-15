@@ -18,7 +18,7 @@ class App extends React.Component {
             <React.Fragment>
                     <Router history={this.props.history}>
                         <Switch>
-                            <Route exact path="/" component={Home} />
+                            <Route path={`${process.env.PUBLIC_URL}/`} component={Home} />
                             <Route component={NoMatch}/>
                         </Switch>
                     </Router>

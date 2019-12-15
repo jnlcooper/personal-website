@@ -55,7 +55,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg" fixed="top">
-            <Navbar.Brand href="/">
+            <Navbar.Brand href={`${process.env.PUBLIC_URL}/`}>
                 <img 
                     src={navbar_logo}
                     width="30"
